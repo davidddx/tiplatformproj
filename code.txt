@@ -1,0 +1,223 @@
+9→Y
+6→X
+8→Z
+22→θ
+0→A
+0→B
+0→C
+0→D
+0→E
+
+"A, B, C, AND D ARE ACTING AS BOOLEANS"
+"Z AND θ ARE PLAT POSITIONS"
+"Y AND X ARE POSITION OF CHAR"
+
+
+ClrHome
+
+"While Loop Runs Program"
+While D=0
+
+getKey→E
+"getkey function gets keycode of key pressed on ti84"
+
+If E=45
+Then
+1→D
+End
+"Stops the Loop If Clear button pressed"
+
+"E=25 is the Keycode for up arrow"
+If E=25
+Then
+Y-1→Y
+
+If θ=1
+Then
+Output(Z,1,"    ")
+22→θ
+End
+
+θ-1→θ
+Output(Y,X,"O")
+Output(Y+1,X," ")
+Output(Z,θ,"----")
+Output(Z,θ+4,"    ")
+
+Wait 0.1
+Y-1→Y
+
+If θ=1
+Then
+Output(Z,1,"    ")
+22→θ
+End
+
+θ-1→θ
+Output(Y,X,"O")
+Output(Y+1,X," ")
+Output(Z,θ,"----")
+Output(Z,θ+4,"    ")
+
+Wait 0.1
+Y-1→Y
+
+If θ=1
+Then
+Output(Z,1,"    ")
+22→θ
+End
+
+θ-1→θ
+Output(Y,X,"O")
+Output(Y+1,X," ")
+Output(Z,θ,"----")
+Output(Z,θ+4,"    ")
+
+"This Above is for Moving Char Up"
+"Outputting like this helps make jump look like an anim"
+
+Y+1→Y
+
+If θ=1
+Then
+Output(Z,1,"    ")
+22→θ
+End
+
+θ-1→θ
+
+Output(Y,X,"O")
+Output(Y-1,X," ")
+Output(Z,θ,"----")
+Output(Z,θ+4,"    ")
+
+Wait 0.1
+
+If Y+1=Z
+Then
+
+If θ-1<X
+Then
+
+If X<θ+5
+Then
+
+1→A
+
+End
+End
+End
+
+If A=0
+Then
+
+Y+1→Y
+
+If θ=1
+Then
+Output(Z,1,"    ")
+22→θ
+End
+
+θ-1→θ
+Output(Y,X,"O")
+Output(Y-1,X," ")
+Output(Z,θ,"----")
+Output(Z,θ+4,"    ")
+
+Wait 0.1
+
+Y+1→Y
+
+If θ=1
+Then
+Output(Z,1,"    ")
+22→θ
+End
+
+θ-1→θ
+Output(Y,X,"O")
+Output(Y-1,X," ")
+Output(Z,θ,"----")
+Output(Z,θ+4,"    ")
+
+Wait 0.1
+
+"Char now has moved back down to starting point"
+"Ending Point for If A=0"
+
+End
+
+If B=1
+Then
+
+Y+1→Y
+
+If θ=1
+Then
+Output(Z,1,"    ")
+22→θ
+End
+
+θ-1→θ
+Output(Y,X,"O")
+Output(Y-1,X," ")
+Output(Z,θ,"----")
+Output(Z,θ+4,"    ")
+
+Wait 0.1
+
+Y+1→Y
+
+If θ=1
+Then
+Output(Z,1,"    ")
+22→θ
+End
+
+θ-1→θ
+Output(Y,X,"O")
+Output(Y-1,X," ")
+Output(Z,θ,"----")
+Output(Z,θ+4,"    ")
+
+Wait 0.1
+
+0→B
+
+"Ending point for If B=1"
+End
+If A=1
+Then
+1→B
+End
+0→A
+
+
+"Ending point for If E=45"
+End
+If Y+1=Z
+Then
+If X>θ+4
+Then
+Output(Y,X," ")
+Y+2→Y
+0→B
+
+End
+End
+
+If θ=1
+Then
+Output(Z,1,"    ")
+20→θ
+End
+
+θ-1→θ
+
+Output(Y,X,"O")
+Output(Z,θ,"----")
+Output(Z,θ+4,"    ")
+"Ending point for While Loop"
+End
